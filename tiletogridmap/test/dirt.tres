@@ -55,7 +55,7 @@ data = {
 image = SubResource("Image_hg6at")
 
 [resource]
-item/0/name = "dirt"
+item/0/name = "dirt0"
 item/0/mesh = SubResource("ArrayMesh_roji7")
 item/0/mesh_transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 item/0/mesh_cast_shadow = 1

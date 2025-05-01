@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=4 uid="uid://cemj65bh2q5e7"]
+
+[ext_resource type="Texture2D" uid="uid://fbw0y3kli6qm" path="res://test/floor_mud32and16andinverted.png" id="1_lpaap"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_851b6"]
+resource_name = "Material.001"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_lpaap")
+roughness = 0.5
+texture_filter = 2
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_cfm1q"]
+_surfaces = [{
+"aabb": AABB(-0.8, -0.1, -0.8, 1.6, 0.1, 1.6),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAwACAAEABAAAAAIAAwAEAAIAAAAFAAEAAwABAAUABAAGAAAABgAEAAMAAAAGAAcABgADAAcAAAAHAAUAAwAFAAcA"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAP7///8AAAAAAAD//wAA///+////AAD//wAA//8AAAAA//8AAAAA//8AAAAAAAD/////AAAAAA==")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_0bhhp"]
+resource_name = "floor_154_floor2_022"
+_surfaces = [{
+"aabb": AABB(-0.8, -0.1, -0.8, 1.6, 0.1, 1.6),
+"attribute_data": PackedByteArray("/////ziO/7//////VI3/3/////84jv/f/////1SN/7//////OI7/wf//////f/+//////ziO/7///////3//wf/////jgP+///////9//9///////3//v//////jgP/f//////9//93/////OI7/3/////84jv/d//////9//9///////3//3/////84jv+//////ziO/9///////3//v///////f//f/////ziO/7///////3//v/////84jv/f"),
+"format": 34896613407,
+"index_count": 36,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUA"),
+"material": SubResource("StandardMaterial3D_851b6"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAAAAqioAAP7///+qKgAAAAD//6oqAAD//wAAqioAAAAAAAD///////8AAP//AAD//wAA/////wAAAAD/////AAAAAFTV///+////VNX/////AABU1f//AAD//1TV///+////AAAAAAAA//8AAAAA/v///wAA//8AAP//AAD//wAA/////wAAAAAAAP//AAAAAP///////wAAAAD//////v///wAAAAD//wAAAAD/////AAAAAAAA/v///wAAVFWqqlRVqqpUVaqqVFWqqv9/////f////3////9///+qqlRVqqpUVaqqVFWqqlRV/3//f/9//3//f/9//3//f/9//z//f/8//3//P/9//z//f/+//3//v/9//7//f/+/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_cfm1q")
+
+[node name="dirt" type="Node3D"]
+
+[node name="dirt" type="Node3D" parent="."]
+
+[node name="dirt" type="MeshInstance3D" parent="dirt"]
+mesh = SubResource("ArrayMesh_0bhhp")
+skeleton = NodePath("")
